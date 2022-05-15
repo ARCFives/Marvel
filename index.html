@@ -1,76 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marvel | Character</title>
-  <link rel="stylesheet" href="src/css/style.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="src/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon-16x16.png">
-  <link rel="manifest" href="src/images/site.webmanifest">
-</head>
-<body>
-  <main>
-    <header>
-      <h1>Character Select</h1>
-    </header>
-    <section class="selection-players">
-
-      <div class="player1 char-big">
-        <img src="src/images/thor.png" alt="Personagem do player 1" id="player1">
-        <div class="name">
-          <h2>Thor</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvel | Character</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="src/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="src/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="src/images/site.webmanifest" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Character Select</h1>
+      </header>
+      <section class="selection-players">
+        <div class="player1 char-big">
+          <img
+            src="src/images/thor.png"
+            alt="Personagem do player 1"
+            id="player1"
+          />
+          <div class="name">
+            <h2 id="playerName">Thor</h2>
+          </div>
         </div>
-      </div>
 
-      <ul class="list-characters">
-        <li class="character selecionado" id="thor" data-name="Thor">
-          <span class="tag">1P</span>
-          <img src="src/images/thor.jpg" alt="Thor">
-        </li>
-        <li class="character" id="ironMan" data-name="Iron Man">
-          <span class="tag">1P</span>
-          <img src="src/images/homem-de-ferro.jpg" alt="Iron Man">
-        </li>
-        <li class="character" id="blackWindow" data-name="Black Window">
-          <span class="tag">1P</span>
-          <img src="src/images/viuva-negra.jpg" alt="Black Window">
-        </li>
-        <li class="character" id="hulk" data-name="Hulk">
-          <span class="tag">1P</span>
-          <img src="src/images/hulk.jpg" alt="Hulk">
-        </li>
-        <li class="character" id="captain" data-name="Captain America">
-          <span class="tag">1P</span>
-          <img src="src/images/capitao-america.jpg" alt="Captain America">
-        </li>
-        <li class="character select-player2" id="ultron" data-name="Ultron">
-          <span class="tag">2P</span>
-          <img src="src/images/ultron.jpg" alt="Ultron">
-        </li>
-        <li class="character" id="doctorDoom" data-name="Doctor Doom">
-          <span class="tag">1P</span>
-          <img src="src/images/doutor-doom.jpg" alt="Doctor Doom">
-        </li>
-        <li class="character" id="nova" data-name="Nova">
-          <span class="tag">1P</span>
-          <img src="src/images/nova.jpg" alt="Nova">
-        </li>
-        <li class="character" id="fenix" data-name="Fenix">
-          <span class="tag">1P</span>
-          <img src="src/images/fenix.jpg" alt="Fenix">
-        </li>      
-      </ul>
+        <ul class="list-characters">
+          <li class="character selecionado" id="thor" data-name="Thor">
+            <span class="tag">1P</span>
+            <img src="src/images/thor.jpg" alt="Thor" />
+          </li>
+          <li class="character" id="homem-de-ferro" data-name="Iron Man">
+            <span class="tag">1P</span>
+            <img src="src/images/homem-de-ferro.jpg" alt="Iron Man" />
+          </li>
+          <li class="character" id="viuva-negra" data-name="Black Window">
+            <span class="tag">1P</span>
+            <img src="src/images/viuva-negra.jpg" alt="Black Window" />
+          </li>
+          <li class="character" id="hulk" data-name="Hulk">
+            <span class="tag">1P</span>
+            <img src="src/images/hulk.jpg" alt="Hulk" />
+          </li>
+          <li
+            class="character"
+            id="capitao-america"
+            data-name="Captain America"
+          >
+            <span class="tag">1P</span>
+            <img src="src/images/capitao-america.jpg" alt="Captain America" />
+          </li>
+          <li class="character select-player2" id="ultron" data-name="Ultron">
+            <span class="tag">2P</span>
+            <img src="src/images/ultron.jpg" alt="Ultron" />
+          </li>
+          <li class="character" id="doutor-doom" data-name="Doctor Doom">
+            <span class="tag">1P</span>
+            <img src="src/images/doutor-doom.jpg" alt="Doctor Doom" />
+          </li>
+          <li class="character" id="nova" data-name="Nova">
+            <span class="tag">1P</span>
+            <img src="src/images/nova.jpg" alt="Nova" />
+          </li>
+          <li class="character" id="fenix" data-name="Fenix">
+            <span class="tag">1P</span>
+            <img src="src/images/fenix.jpg" alt="Fenix" />
+          </li>
+        </ul>
 
-      <div class="player2 char-big">
-        <img src="src/images/ultron.png" alt="Personagem do player 2" id="player2">
-        <div class="name">
-          <h2>Ultron</h2>
+        <div class="player2 char-big">
+          <img
+            src="src/images/ultron.png"
+            alt="Personagem do player 2"
+            id="player2"
+          />
+          <div class="name">
+            <h2>Ultron</h2>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
-</body>
+      </section>
+    </main>
+    <script src="src/js/index.js"></script>
+  </body>
 </html>
